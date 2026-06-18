@@ -3,6 +3,7 @@
 import React from "react";
 import { getTechIcon } from "./Icons";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { staggerContainer, fadeUpVariant, viewportConfig } from './Animations';
 
 export default function SkillsSection() {
@@ -11,9 +12,9 @@ export default function SkillsSection() {
   const toolsSkills = ["Strapi CMS", "Docker", "AWS", "Vercel", "GitHub", "Git", "Stripe", "Postman", "Figma"];
 
   return (
-    <section id="skills" className="py-32 bg-zinc-900 text-white relative border-t border-zinc-800 overflow-hidden">
+    <section id="skills" className="py-16 md:py-24 lg:py-32 bg-zinc-900 text-white relative border-t border-zinc-800 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center">
           
           {/* Left Side: Text and Skills */}
           <motion.div 
@@ -28,7 +29,7 @@ export default function SkillsSection() {
                 <div className="w-12 h-[2px] bg-orange-500" />
                 <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">My Stack</span>
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
                 Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400">Expertise</span>
               </h2>
               <p className="text-zinc-400 text-lg leading-relaxed max-w-xl">
@@ -101,17 +102,18 @@ export default function SkillsSection() {
 
           {/* Right Side: Professional Image */}
           <motion.div 
-            className="relative h-[600px] lg:h-[800px] w-full rounded-[2rem] overflow-hidden shadow-2xl shadow-black/50 group"
+            className="relative h-[350px] md:h-[500px] lg:h-[800px] w-full rounded-[2rem] overflow-hidden shadow-2xl shadow-black/50 group"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={viewportConfig}
           >
             <div className="absolute inset-0 bg-orange-500/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-700" />
-            <img 
+            <Image 
               src="/skills-bg.png" 
               alt="Technical Architecture" 
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
+              fill
+              className="object-cover transform group-hover:scale-105 transition-transform duration-1000"
             />
           </motion.div>
 

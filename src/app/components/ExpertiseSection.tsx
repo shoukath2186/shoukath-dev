@@ -8,7 +8,7 @@ export default function ExpertiseSection() {
   return (
     <section
       id="expertise"
-      className="py-32 text-white relative border-t border-zinc-900 bg-cover bg-center bg-fixed"
+      className="py-16 md:py-24 lg:py-32 text-white relative border-t border-zinc-900 bg-cover bg-center bg-fixed"
       style={{ backgroundImage: "url('/expertise-bg.png')" }}
     >
       {/* Dark overlay to ensure text readability */}
@@ -16,7 +16,7 @@ export default function ExpertiseSection() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
-          className="flex flex-col lg:flex-row gap-16 items-start"
+          className="flex flex-col lg:flex-row gap-10 md:gap-16 items-start"
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
@@ -27,7 +27,7 @@ export default function ExpertiseSection() {
               <div className="w-12 h-[2px] bg-orange-500" />
               <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">Expertise</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase leading-[1.1]">
               Modern <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">Technology</span>
               <br />Expertise
             </h2>

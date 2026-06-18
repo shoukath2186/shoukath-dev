@@ -42,24 +42,24 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-32 bg-white text-black relative overflow-hidden">
+    <section id="experience" className="py-16 md:py-24 lg:py-32 bg-white text-black relative overflow-hidden">
       <div className="absolute left-0 right-0 top-0 h-px " />
 
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
-          className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8"
+          className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-6 md:gap-8"
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={viewportConfig}
         >
-          <motion.div variants={slideInLeftVariant} className="space-y-4 max-w-2xl">
+          <motion.div variants={slideInLeftVariant} className="space-y-2 max-w-2xl">
             <div className="flex items-center gap-4">
               <div className="w-12 h-[2px] bg-orange-500" />
               <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">My Path</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter uppercase leading-[1.1]">
-              Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 to-zinc-600">Experience</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase leading-[1.1]">
+              Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Journey</span>
             </h2>
           </motion.div>
         </motion.div>
@@ -77,7 +77,7 @@ export default function ExperienceSection() {
           </motion.div>
 
           <motion.div
-            className="space-y-12 md:space-y-24"
+            className="space-y-10 md:space-y-24"
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"

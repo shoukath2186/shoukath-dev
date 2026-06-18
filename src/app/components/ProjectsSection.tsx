@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { GithubIcon } from "./Icons";
 import { projects, Project } from "../../data/projects";
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { staggerContainer, fadeUpVariant, viewportConfig } from './Animations';
 
 export default function ProjectsSection() {
@@ -28,7 +29,7 @@ export default function ProjectsSection() {
   }, [selectedProject]);
 
   return (
-    <section id="projects" className="py-32 bg-gray-50 text-gray-900 border-t border-gray-200 relative">
+    <section id="projects" className="py-16 md:py-24 lg:py-32 bg-gray-50 text-gray-900 border-t border-gray-200 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <motion.div
@@ -42,8 +43,8 @@ export default function ProjectsSection() {
               <div className="w-12 h-[2px] bg-orange-500" />
               <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">Portfolio</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tighter uppercase leading-[1.1]">
-              Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Projects</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[1.1] mb-6">
+              Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Work</span>
             </h2>
           </motion.div>
 
@@ -82,7 +83,7 @@ export default function ProjectsSection() {
           whileInView="show"
           viewport={viewportConfig}
         >
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, idx) => (
               <motion.div
                 key={project.title}
@@ -96,10 +97,11 @@ export default function ProjectsSection() {
                 {/* Image Section */}
                 <div className="w-full md:w-1/2 lg:w-3/5">
                   <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem] bg-gray-100 shadow-md  transition-all duration-500">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transform transition-transform duration-700"
+                      fill
+                      className="object-cover transform transition-transform duration-700"
                     />
                     <div className="absolute top-6 left-6 z-20">
                       <span className="text-[10px] font-black uppercase tracking-widest bg-white/90 backdrop-blur-md px-4 py-2 text-gray-900 rounded-full shadow-sm">
@@ -196,10 +198,12 @@ export default function ProjectsSection() {
 
               {/* Banner Image */}
               <div className="relative w-full shrink-0 rounded-t-[2rem] overflow-hidden bg-gray-50 border-b border-gray-100">
-                <img
+                <Image
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="w-full h-auto object-contain"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto max-h-[60vh] object-contain mx-auto"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent" />
               </div>

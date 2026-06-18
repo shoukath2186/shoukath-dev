@@ -7,7 +7,7 @@ import { staggerContainer, fadeUpVariant, viewportConfig } from './Animations';
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-32 bg-black text-white">
+    <section id="services" className="py-16 md:py-24 lg:py-32 bg-black text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <div className="inline-flex items-center gap-4">
@@ -15,7 +15,7 @@ export default function ServicesSection() {
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">What I Do</span>
             <div className="w-8 h-[2px] bg-orange-500" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
             Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">Expertise</span>
           </h2>
         </div>

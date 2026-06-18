@@ -45,41 +45,41 @@ export const projects: Project[] = [
         ]
     },
 
-    {
-        title: "Wabcom Dubai",
-        description:
-            "A professional business website for a Dubai-based Tally solutions provider. The project features modern UI, smooth animations, dynamic content management through Strapi CMS, and deployment through Coolify on a Linux server.",
-        image: "/projects/wabcom.png",
-        liveUrl: "https://wabcomdubai.com/",
-        githubUrl: "",
-        tech: [
-            "Next.js",
-            "React.js",
-            "Strapi CMS",
-            "Tailwind CSS",
-            "GSAP",
-            "JavaScript",
-            "REST API",
-            "SEO",
-            "Coolify",
-            "Linux Server",
-            "Nginx",
-            "Git",
-            "GitHub",
-            "Responsive Design"
-        ],
-        category: "fullstack",
-        points: [
-            "Developed a fully responsive business website.",
-            "Implemented advanced animations using GSAP.",
-            "Built dynamic content management with Strapi CMS.",
-            "Configured and managed application deployment using Coolify.",
-            "Handled server setup and deployment processes.",
-            "Optimized website architecture for SEO.",
-            "Integrated API-driven content rendering.",
-            "Enhanced user engagement through interactive animations."
-        ]
-    },
+    // {
+    //     title: "Wabcom Dubai",
+    //     description:
+    //         "A professional business website for a Dubai-based Tally solutions provider. The project features modern UI, smooth animations, dynamic content management through Strapi CMS, and deployment through Coolify on a Linux server.",
+    //     image: "/projects/wabcom.png",
+    //     liveUrl: "https://wabcomdubai.com/",
+    //     githubUrl: "",
+    //     tech: [
+    //         "Next.js",
+    //         "React.js",
+    //         "Strapi CMS",
+    //         "Tailwind CSS",
+    //         "GSAP",
+    //         "JavaScript",
+    //         "REST API",
+    //         "SEO",
+    //         "Coolify",
+    //         "Linux Server",
+    //         "Nginx",
+    //         "Git",
+    //         "GitHub",
+    //         "Responsive Design"
+    //     ],
+    //     category: "fullstack",
+    //     points: [
+    //         "Developed a fully responsive business website.",
+    //         "Implemented advanced animations using GSAP.",
+    //         "Built dynamic content management with Strapi CMS.",
+    //         "Configured and managed application deployment using Coolify.",
+    //         "Handled server setup and deployment processes.",
+    //         "Optimized website architecture for SEO.",
+    //         "Integrated API-driven content rendering.",
+    //         "Enhanced user engagement through interactive animations."
+    //     ]
+    // },
 
     {
         title: "Blue Link Printing",

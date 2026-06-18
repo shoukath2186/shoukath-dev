@@ -62,7 +62,7 @@ export default function ContactSection() {
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate all fields
     const isNameValid = validateField("name", formData.name);
     const isEmailValid = validateField("email", formData.email);
@@ -109,7 +109,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-32 bg-zinc-950 text-white border-t border-zinc-900 relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 lg:py-32 bg-zinc-950 text-white border-t border-zinc-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-500/20 via-zinc-950 to-zinc-950" />
@@ -124,7 +124,7 @@ export default function ContactSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <motion.div 
+        <motion.div
           className="text-center max-w-3xl mx-auto mb-20 space-y-4"
           variants={fadeUpVariant}
           initial="hidden"
@@ -136,7 +136,7 @@ export default function ContactSection() {
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">Collaborate</span>
             <div className="w-8 h-[2px] bg-orange-500" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
             Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">Connect</span>
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl leading-relaxed max-w-xl mx-auto">
@@ -144,7 +144,7 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="grid lg:grid-cols-12 gap-0 border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl bg-zinc-950/80 backdrop-blur-2xl"
           initial="hidden"
           whileInView="show"
@@ -153,7 +153,7 @@ export default function ContactSection() {
           {/* Contact Info Panel */}
           <motion.div variants={slideInLeftVariant} className="lg:col-span-5 bg-zinc-900/50 p-10 md:p-14 border-b lg:border-b-0 lg:border-r border-zinc-800 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full mix-blend-screen filter blur-[80px]" />
-            
+
             <div className="relative z-10 space-y-12 h-full flex flex-col">
               <div>
                 <h3 className="text-2xl font-bold text-white uppercase tracking-wider mb-2">Get in touch</h3>

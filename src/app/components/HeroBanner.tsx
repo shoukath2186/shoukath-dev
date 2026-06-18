@@ -31,7 +31,7 @@ export default function HeroBanner() {
             AVAILABLE FOR NEW OPPORTUNITIES
           </motion.div>
           
-          <motion.h1 variants={fadeUpVariant} className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-white">
+          <motion.h1 variants={fadeUpVariant} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-white">
             DESIGN. <br/>
             BUILD. <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">

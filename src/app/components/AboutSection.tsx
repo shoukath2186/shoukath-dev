@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { staggerContainer, slideInLeftVariant, slideInRightVariant, viewportConfig } from './Animations';
 
 const techStack = [
@@ -14,13 +15,13 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-32 bg-white text-black relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 lg:py-32 bg-white text-black relative overflow-hidden">
       {/* Background Accent */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-zinc-200 rounded-full mix-blend-multiply filter blur-[120px] opacity-50 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
-          className="flex flex-col lg:flex-row gap-16 items-center"
+          className="flex flex-col lg:flex-row gap-10 md:gap-16 items-center"
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
@@ -34,7 +35,7 @@ export default function AboutSection() {
                 <div className="w-12 h-[2px] bg-orange-500" />
                 <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">About Me</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter uppercase leading-[1.1]">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase leading-[1.1]">
                 Engineering <br />
                 <span className="text-zinc-400">Digital</span> <br />
                 Experiences
@@ -71,10 +72,11 @@ export default function AboutSection() {
 
               {/* Image */}
               <div className="absolute inset-0 bg-zinc-100 rounded-xl overflow-hidden z-10 border border-zinc-200">
-                <img
+                <Image
                   src="/IMG-20240531-WA0014 (1).jpg"
                   alt="About Shoukath"
-                  className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                  fill
+                  className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
                 />
               </div>
 
