@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description: "Portfolio of Shoukath Otm, a MERN Stack Developer passionate about building scalable, high-performance web applications with React, Node.js, MongoDB, TypeScript, and Tailwind CSS.",
   keywords: ["Shoukath Otm", "MERN Stack Developer", "Full Stack Developer", "React Developer", "Node.js Developer", "TypeScript Developer", "Calicut Developer", "Kerala India"],
   authors: [{ name: "Shoukath Otm" }],
+  verification: {
+    google: "YyVhyQbgtLDDTYm_9EayZ9YubUtP551sG5sfcB0rTwU",
+  },
 };
 
 export default function RootLayout({

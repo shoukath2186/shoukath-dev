@@ -56,7 +56,12 @@ export default function PortfolioPage() {
       <ContactSection />
 
       {/* Footer */}
-      <footer className="py-8 border-t border-zinc-900 bg-black text-center text-xs text-zinc-500 uppercase tracking-widest font-bold">
+      <footer className="py-12 border-t border-zinc-900 bg-black text-center text-xs text-zinc-500 uppercase tracking-widest font-bold space-y-4">
+        <div className="flex justify-center gap-6">
+          <a href="/services" className="text-zinc-400 hover:text-orange-500 transition-colors duration-300">
+            View Detailed Services
+          </a>
+        </div>
         <p>&copy; {new Date().getFullYear()} Shoukath Otm. All rights reserved.</p>
       </footer>
     </div>
