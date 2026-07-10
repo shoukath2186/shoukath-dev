@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SitemapClient from "./SitemapClient";
+import SitemapClient from "@/app/sitemap/SitemapClient";
 
 export const metadata: Metadata = {
   title: "Sitemap | Shoukath Otm - MERN Stack Developer",
