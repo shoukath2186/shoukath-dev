@@ -591,6 +591,10 @@ export default function ServicesClient() {
           <a href="/" className="text-zinc-500 hover:text-orange-650 transition-colors duration-300">
             Back to Home
           </a>
+          <span className="text-zinc-300">|</span>
+          <a href="/sitemap" className="text-zinc-500 hover:text-orange-650 transition-colors duration-300">
+            Sitemap
+          </a>
         </div>
         <p>&copy; {new Date().getFullYear()} Shoukath Otm. All rights reserved.</p>
       </footer>

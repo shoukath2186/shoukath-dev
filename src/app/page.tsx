@@ -61,6 +61,10 @@ export default function PortfolioPage() {
           <a href="/services" className="text-zinc-400 hover:text-orange-500 transition-colors duration-300">
             View Detailed Services
           </a>
+          <span className="text-zinc-800">|</span>
+          <a href="/sitemap" className="text-zinc-400 hover:text-orange-500 transition-colors duration-300">
+            Sitemap
+          </a>
         </div>
         <p>&copy; {new Date().getFullYear()} Shoukath Otm. All rights reserved.</p>
       </footer>
