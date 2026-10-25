@@ -16,8 +16,8 @@ export default function AboutSplit() {
           {/* About text content with glass effect */}
           <div className="md:col-span-7 space-y-6">
             <div className="space-y-2">
-              <span className="text-xs uppercase tracking-widest font-black text-orange-600">About Me</span>
-              <h2 className="text-3xl md:text-5xl font-black text-black tracking-tight uppercase">
+              <span className="text-xs font-bold text-orange-600">About Me</span>
+              <h2 className="text-3xl md:text-5xl font-black text-black tracking-tight">
                 Scaling applications with design clarity
               </h2>
             </div>

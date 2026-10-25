@@ -41,9 +41,9 @@ export default function ProjectsSection() {
           >
             <div className="flex items-center gap-4">
               <div className="w-12 h-[2px] bg-orange-500" />
-              <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">Portfolio</span>
+              <span className="text-xs font-bold text-orange-500">Portfolio</span>
             </div>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[1.1] mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-6">
               Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Work</span>
             </h2>
           </motion.div>
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
               <button
                 key={filter.id}
                 onClick={() => setProjectFilter(filter.id as any)}
-                className={`px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest rounded-full transition-all duration-300 ${projectFilter === filter.id
+                className={`px-5 py-2 text-xs font-semibold rounded-full transition-all duration-300 ${projectFilter === filter.id
                     ? "bg-orange-500 text-white shadow-md shadow-orange-500/20"
                     : "bg-white border border-gray-200 text-gray-500 hover:text-gray-900 hover:border-orange-500 hover:shadow-sm"
                   }`}
@@ -104,7 +104,7 @@ export default function ProjectsSection() {
                       className="object-cover transform transition-transform duration-700"
                     />
                     <div className="absolute top-6 left-6 z-20">
-                      <span className="text-[10px] font-black uppercase tracking-widest bg-white/90 backdrop-blur-md px-4 py-2 text-gray-900 rounded-full shadow-sm">
+                      <span className="text-xs font-semibold capitalize bg-white/90 backdrop-blur-md px-3.5 py-1.5 text-gray-900 rounded-full shadow-sm">
                         {project.category}
                       </span>
                     </div>
@@ -114,7 +114,7 @@ export default function ProjectsSection() {
                 {/* Content Section */}
                 <div className="w-full md:w-1/2 lg:w-2/5 flex flex-col justify-center">
                   <div className={`space-y-6 ${idx % 2 !== 0 ? 'md:items-start' : ''}`}>
-                    <h3 className="text-3xl md:text-4xl font-black text-gray-900 uppercase tracking-tighter group-hover:text-orange-500 transition-colors">
+                    <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight group-hover:text-orange-500 transition-colors">
                       {project.title}
                     </h3>
 
@@ -124,12 +124,12 @@ export default function ProjectsSection() {
 
                     <div className="flex flex-wrap gap-2 pt-2">
                       {project.tech.slice(0, 4).map((t) => (
-                        <span key={t} className="text-[10px] bg-white border border-gray-200 px-3 py-1.5 text-gray-500 font-bold uppercase tracking-widest rounded-lg">
+                        <span key={t} className="text-xs bg-white border border-gray-200 px-3 py-1.5 text-gray-600 font-medium rounded-lg">
                           {t}
                         </span>
                       ))}
                       {project.tech.length > 4 && (
-                        <span className="text-[10px] bg-gray-100 border border-transparent px-3 py-1.5 text-gray-500 font-bold uppercase tracking-widest rounded-lg">
+                        <span className="text-xs bg-gray-100 border border-transparent px-3 py-1.5 text-gray-600 font-medium rounded-lg">
                           +{project.tech.length - 4} more
                         </span>
                       )}
@@ -138,7 +138,7 @@ export default function ProjectsSection() {
                     <div className="pt-8 border-t border-gray-200 mt-8 flex flex-wrap gap-4">
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="flex-1 sm:flex-none inline-flex justify-center items-center gap-3 px-8 py-4 text-xs font-bold uppercase tracking-widest bg-gray-900 text-white hover:bg-orange-500 transition-all duration-300 rounded-xl shadow-md hover:-translate-y-1"
+                        className="flex-1 sm:flex-none inline-flex justify-center items-center gap-3 px-8 py-4 text-sm font-semibold bg-gray-900 text-white hover:bg-orange-500 transition-all duration-300 rounded-xl shadow-md hover:-translate-y-1"
                       >
                         Explore Project
                         <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -151,7 +151,7 @@ export default function ProjectsSection() {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 sm:flex-none inline-flex justify-center items-center gap-3 px-8 py-4 text-xs font-bold uppercase tracking-widest bg-white text-gray-900 border border-gray-200 hover:border-orange-500 hover:text-orange-500 transition-all duration-300 rounded-xl shadow-sm hover:-translate-y-1"
+                          className="flex-1 sm:flex-none inline-flex justify-center items-center gap-3 px-8 py-4 text-sm font-semibold bg-white text-gray-900 border border-gray-200 hover:border-orange-500 hover:text-orange-500 transition-all duration-300 rounded-xl shadow-sm hover:-translate-y-1"
                         >
                           Live View
                           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -212,10 +212,10 @@ export default function ProjectsSection() {
               <div className="p-6 sm:p-8 md:p-10 flex-1 flex flex-col relative z-10">
                 {/* Header */}
                 <div className="mb-10 max-w-3xl">
-                  <span className="inline-block px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest bg-orange-500 text-white rounded-full mb-4 shadow-sm shadow-orange-500/20">
+                  <span className="inline-block px-4 py-1.5 text-xs font-semibold capitalize bg-orange-500 text-white rounded-full mb-4 shadow-sm shadow-orange-500/20">
                     {selectedProject.category}
                   </span>
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 uppercase tracking-tighter mb-4 leading-[1.1]">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-4 leading-[1.1]">
                     {selectedProject.title}
                   </h3>
                   <p className="text-base sm:text-lg text-gray-500 leading-relaxed font-medium">
@@ -229,12 +229,12 @@ export default function ProjectsSection() {
                   <div className="lg:col-span-4 space-y-8 order-2 lg:order-1">
                     {/* Tech Stack */}
                     <div>
-                      <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-900 mb-4 flex items-center gap-2">
+                      <h4 className="text-sm font-bold text-gray-900 mb-4 flex items-center gap-2">
                         <span className="w-6 h-[2px] bg-orange-500"></span> Technologies
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {selectedProject.tech.map((t) => (
-                          <span key={t} className="text-[10px] bg-gray-50 border border-gray-200 px-3 py-1.5 text-gray-700 font-bold uppercase tracking-widest rounded-lg hover:border-orange-500 hover:text-orange-500 transition-colors shadow-sm">
+                          <span key={t} className="text-xs bg-gray-50 border border-gray-200 px-3 py-1.5 text-gray-700 font-medium rounded-lg hover:border-orange-500 hover:text-orange-500 transition-colors shadow-sm">
                             {t}
                           </span>
                         ))}
@@ -248,7 +248,7 @@ export default function ProjectsSection() {
                           href={selectedProject.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full text-center px-6 py-3.5 text-xs font-black bg-orange-500 text-white hover:bg-orange-600 transition-all uppercase tracking-widest rounded-xl flex items-center justify-center gap-2 shadow-md shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5"
+                          className="w-full text-center px-6 py-3.5 text-sm font-semibold bg-orange-500 text-white hover:bg-orange-600 transition-all rounded-xl flex items-center justify-center gap-2 shadow-md shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5"
                         >
                           Launch Live Site
                           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -261,7 +261,7 @@ export default function ProjectsSection() {
                           href={selectedProject.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full text-center px-6 py-3.5 text-xs font-black bg-gray-900 text-white hover:bg-gray-800 transition-all uppercase tracking-widest flex items-center justify-center gap-2 rounded-xl shadow-md hover:-translate-y-0.5"
+                          className="w-full text-center px-6 py-3.5 text-sm font-semibold bg-gray-900 text-white hover:bg-gray-800 transition-all flex items-center justify-center gap-2 rounded-xl shadow-md hover:-translate-y-0.5"
                         >
                           View Repository <GithubIcon size={16} />
                         </a>
@@ -272,7 +272,7 @@ export default function ProjectsSection() {
                   {/* Right Column - Key Features */}
                   {selectedProject.points && selectedProject.points.length > 0 && (
                     <div className="lg:col-span-8 order-1 lg:order-2">
-                      <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-900 mb-6 flex items-center gap-2">
+                      <h4 className="text-sm font-bold text-gray-900 mb-6 flex items-center gap-2">
                         <span className="w-6 h-[2px] bg-orange-500"></span> Key Features & Impact
                       </h4>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">

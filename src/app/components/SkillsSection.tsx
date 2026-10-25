@@ -27,9 +27,9 @@ export default function SkillsSection() {
             <motion.div variants={fadeUpVariant} className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-[2px] bg-orange-500" />
-                <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">My Stack</span>
+                <span className="text-xs font-bold text-orange-500">My Stack</span>
               </div>
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
                 Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400">Expertise</span>
               </h2>
               <p className="text-zinc-400 text-lg leading-relaxed max-w-xl">
@@ -40,7 +40,7 @@ export default function SkillsSection() {
             <motion.div variants={staggerContainer} className="space-y-10">
               {/* Frontend */}
               <motion.div variants={fadeUpVariant}>
-                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-white mb-5 flex items-center gap-3">
+                <h3 className="text-base font-bold text-white mb-5 flex items-center gap-3">
                   Frontend Development
                 </h3>
                 <div className="flex flex-wrap gap-2.5">
@@ -52,7 +52,7 @@ export default function SkillsSection() {
                       <div className="text-zinc-400 group-hover:text-orange-400 transition-colors">
                         {getTechIcon(tech)}
                       </div>
-                      <span className="text-[11px] font-bold uppercase tracking-widest">{tech}</span>
+                      <span className="text-xs font-semibold">{tech}</span>
                     </div>
                   ))}
                 </div>
@@ -60,7 +60,7 @@ export default function SkillsSection() {
 
               {/* Backend */}
               <motion.div variants={fadeUpVariant}>
-                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-white mb-5 flex items-center gap-3">
+                <h3 className="text-base font-bold text-white mb-5 flex items-center gap-3">
                   Backend & Databases
                 </h3>
                 <div className="flex flex-wrap gap-2.5">
@@ -72,7 +72,7 @@ export default function SkillsSection() {
                       <div className="text-zinc-400 group-hover:text-orange-400 transition-colors">
                         {getTechIcon(tech)}
                       </div>
-                      <span className="text-[11px] font-bold uppercase tracking-widest">{tech}</span>
+                      <span className="text-xs font-semibold">{tech}</span>
                     </div>
                   ))}
                 </div>
@@ -80,7 +80,7 @@ export default function SkillsSection() {
 
               {/* Tools & Cloud */}
               <motion.div variants={fadeUpVariant}>
-                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-white mb-5 flex items-center gap-3">
+                <h3 className="text-base font-bold text-white mb-5 flex items-center gap-3">
                   CMS, Tools & Cloud
                 </h3>
                 <div className="flex flex-wrap gap-2.5">
@@ -92,7 +92,7 @@ export default function SkillsSection() {
                       <div className="text-zinc-400 group-hover:text-orange-400 transition-colors">
                         {getTechIcon(tech)}
                       </div>
-                      <span className="text-[11px] font-bold uppercase tracking-widest">{tech}</span>
+                      <span className="text-xs font-semibold">{tech}</span>
                     </div>
                   ))}
                 </div>

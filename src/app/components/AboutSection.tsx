@@ -33,9 +33,9 @@ export default function AboutSection() {
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-[2px] bg-orange-500" />
-                <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">About Me</span>
+                <span className="text-xs font-bold text-orange-500">About Me</span>
               </div>
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase leading-[1.1]">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black tracking-tight leading-[1.1]">
                 Engineering <br />
                 <span className="text-zinc-400">Digital</span> <br />
                 Experiences
@@ -54,12 +54,12 @@ export default function AboutSection() {
             <div className="pt-4 flex items-center gap-6">
               <div className="flex flex-col">
                 <span className="text-4xl font-black text-black">10+</span>
-                <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Projects Delivered</span>
+                <span className="text-xs text-zinc-500 font-semibold">Projects Delivered</span>
               </div>
               <div className="w-[1px] h-12 bg-zinc-300" />
               <div className="flex flex-col">
                 <span className="text-4xl font-black text-orange-500">🏆</span>
-                <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold mt-1">Best Performer Award</span>
+                <span className="text-xs text-zinc-500 font-semibold mt-1">Best Performer Award</span>
               </div>
             </div>
           </motion.div>
@@ -96,14 +96,14 @@ export default function AboutSection() {
         <div className="flex whitespace-nowrap w-max">
           <div className="animate-marquee flex gap-16 items-center pr-16 group-hover:[animation-play-state:paused]">
             {techStack.map((tech, idx) => (
-              <span key={`tech-1-${idx}`} className="text-4xl md:text-6xl font-black text-zinc-400 uppercase tracking-tighter whitespace-nowrap hover:text-orange-500 transition-colors duration-300 cursor-default">
+              <span key={`tech-1-${idx}`} className="text-4xl md:text-6xl font-black text-zinc-400 tracking-tight whitespace-nowrap hover:text-orange-500 transition-colors duration-300 cursor-default">
                 {tech}
               </span>
             ))}
           </div>
           <div className="animate-marquee flex gap-16 items-center pr-16 group-hover:[animation-play-state:paused]" aria-hidden="true">
             {techStack.map((tech, idx) => (
-              <span key={`tech-2-${idx}`} className="text-4xl md:text-6xl font-black text-zinc-400 uppercase tracking-tighter whitespace-nowrap hover:text-orange-500 transition-colors duration-300 cursor-default">
+              <span key={`tech-2-${idx}`} className="text-4xl md:text-6xl font-black text-zinc-400 tracking-tight whitespace-nowrap hover:text-orange-500 transition-colors duration-300 cursor-default">
                 {tech}
               </span>
             ))}

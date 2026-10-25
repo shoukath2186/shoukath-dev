@@ -133,10 +133,10 @@ export default function ContactSection() {
         >
           <div className="inline-flex items-center gap-4">
             <div className="w-8 h-[2px] bg-orange-500" />
-            <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">Collaborate</span>
+            <span className="text-xs font-bold text-orange-500">Collaborate</span>
             <div className="w-8 h-[2px] bg-orange-500" />
           </div>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
             Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">Connect</span>
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl leading-relaxed max-w-xl mx-auto">
@@ -156,7 +156,7 @@ export default function ContactSection() {
 
             <div className="relative z-10 space-y-12 h-full flex flex-col">
               <div>
-                <h3 className="text-2xl font-bold text-white uppercase tracking-wider mb-2">Get in touch</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Get in touch</h3>
                 <p className="text-zinc-400 leading-relaxed">I'm currently available for full-time opportunities or freelance projects.</p>
               </div>
 
@@ -166,7 +166,7 @@ export default function ContactSection() {
                     <Mail size={18} />
                   </div>
                   <div>
-                    <span className="text-[10px] text-zinc-500 block uppercase font-bold tracking-widest mb-1">Email</span>
+                    <span className="text-xs text-zinc-500 block font-semibold mb-1">Email</span>
                     <a href="mailto:shoukathot77@gmail.com" className="text-lg text-white font-medium hover:text-orange-400 transition-colors">
                       shoukathot77@gmail.com
                     </a>
@@ -178,7 +178,7 @@ export default function ContactSection() {
                     <Phone size={18} />
                   </div>
                   <div>
-                    <span className="text-[10px] text-zinc-500 block uppercase font-bold tracking-widest mb-1">Phone</span>
+                    <span className="text-xs text-zinc-500 block font-semibold mb-1">Phone</span>
                     <a href="tel:+919207022187" className="text-lg text-white font-medium hover:text-orange-400 transition-colors">
                       +91 9207022187
                     </a>
@@ -190,7 +190,7 @@ export default function ContactSection() {
                     <MapPin size={18} />
                   </div>
                   <div>
-                    <span className="text-[10px] text-zinc-500 block uppercase font-bold tracking-widest mb-1">Location</span>
+                    <span className="text-xs text-zinc-500 block font-semibold mb-1">Location</span>
                     <span className="text-lg text-white font-medium">
                       Calicut, Kerala, India
                     </span>
@@ -199,7 +199,7 @@ export default function ContactSection() {
               </div>
 
               <div className="pt-8 border-t border-zinc-800/50">
-                <h4 className="text-[10px] text-zinc-500 uppercase font-bold tracking-widest mb-4">Follow Me</h4>
+                <h4 className="text-xs text-zinc-500 font-semibold mb-4">Follow Me</h4>
                 <div className="flex gap-4">
                   {[
                     { icon: <LinkedinIcon size={18} />, href: "https://www.linkedin.com/in/shoukath-0t-ab6338246/" },
@@ -221,52 +221,52 @@ export default function ContactSection() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="relative group">
                   <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder=" " className={`peer w-full bg-transparent border-b-2 px-0 py-3 text-white focus:outline-none focus:ring-0 text-lg transition-colors ${formErrors.name ? "border-red-500" : "border-zinc-800 focus:border-orange-500"}`} />
-                  <label htmlFor="name" className="absolute left-0 -top-3.5 text-xs text-zinc-500 font-bold uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-orange-500">Your Name *</label>
-                  {formErrors.name && <span className="absolute -bottom-6 left-0 text-[10px] text-red-500 uppercase tracking-wider font-bold flex items-center gap-1"><AlertCircle size={10} /> {formErrors.name}</span>}
+                  <label htmlFor="name" className="absolute left-0 -top-3.5 text-xs text-zinc-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-orange-500">Your Name *</label>
+                  {formErrors.name && <span className="absolute -bottom-6 left-0 text-xs text-red-500 font-medium flex items-center gap-1"><AlertCircle size={10} /> {formErrors.name}</span>}
                 </div>
 
                 <div className="relative group">
                   <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} placeholder=" " className={`peer w-full bg-transparent border-b-2 px-0 py-3 text-white focus:outline-none focus:ring-0 text-lg transition-colors ${formErrors.email ? "border-red-500" : "border-zinc-800 focus:border-orange-500"}`} />
-                  <label htmlFor="email" className="absolute left-0 -top-3.5 text-xs text-zinc-500 font-bold uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-orange-500">Email Address</label>
-                  {formErrors.email && <span className="absolute -bottom-6 left-0 text-[10px] text-red-500 uppercase tracking-wider font-bold flex items-center gap-1"><AlertCircle size={10} /> {formErrors.email}</span>}
+                  <label htmlFor="email" className="absolute left-0 -top-3.5 text-xs text-zinc-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-orange-500">Email Address</label>
+                  {formErrors.email && <span className="absolute -bottom-6 left-0 text-xs text-red-500 font-medium flex items-center gap-1"><AlertCircle size={10} /> {formErrors.email}</span>}
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 pt-4">
                 <div className="relative group">
                   <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} placeholder=" " className={`peer w-full bg-transparent border-b-2 px-0 py-3 text-white focus:outline-none focus:ring-0 text-lg transition-colors ${formErrors.phone ? "border-red-500" : "border-zinc-800 focus:border-orange-500"}`} />
-                  <label htmlFor="phone" className="absolute left-0 -top-0.5 text-xs text-zinc-500 font-bold uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-0.5 peer-focus:text-xs peer-focus:text-orange-500">Phone Number *</label>
-                  {formErrors.phone && <span className="absolute -bottom-6 left-0 text-[10px] text-red-500 uppercase tracking-wider font-bold flex items-center gap-1"><AlertCircle size={10} /> {formErrors.phone}</span>}
+                  <label htmlFor="phone" className="absolute left-0 -top-0.5 text-xs text-zinc-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-0.5 peer-focus:text-xs peer-focus:text-orange-500">Phone Number *</label>
+                  {formErrors.phone && <span className="absolute -bottom-6 left-0 text-xs text-red-500 font-medium flex items-center gap-1"><AlertCircle size={10} /> {formErrors.phone}</span>}
                 </div>
 
                 <div className="relative group">
                   <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleInputChange} placeholder=" " className={`peer w-full bg-transparent border-b-2 px-0 py-3 text-white focus:outline-none focus:ring-0 text-lg transition-colors ${formErrors.subject ? "border-red-500" : "border-zinc-800 focus:border-orange-500"}`} />
-                  <label htmlFor="subject" className="absolute left-0 -top-0.5 text-xs text-zinc-500 font-bold uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-0.5 peer-focus:text-xs peer-focus:text-orange-500">Subject</label>
-                  {formErrors.subject && <span className="absolute -bottom-6 left-0 text-[10px] text-red-500 uppercase tracking-wider font-bold flex items-center gap-1"><AlertCircle size={10} /> {formErrors.subject}</span>}
+                  <label htmlFor="subject" className="absolute left-0 -top-0.5 text-xs text-zinc-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-0.5 peer-focus:text-xs peer-focus:text-orange-500">Subject</label>
+                  {formErrors.subject && <span className="absolute -bottom-6 left-0 text-xs text-red-500 font-medium flex items-center gap-1"><AlertCircle size={10} /> {formErrors.subject}</span>}
                 </div>
               </div>
 
               <div className="relative group pt-4">
                 <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={4} placeholder=" " className={`peer w-full bg-transparent border-b-2 px-0 py-3 text-white focus:outline-none focus:ring-0 resize-none text-lg transition-colors ${formErrors.message ? "border-red-500" : "border-zinc-800 focus:border-orange-500"}`} />
-                <label htmlFor="message" className="absolute left-0 -top-0.5 text-xs text-zinc-500 font-bold uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-7 peer-focus:-top-0.5 peer-focus:text-xs peer-focus:text-orange-500">Your Message</label>
-                {formErrors.message && <span className="absolute -bottom-6 left-0 text-[10px] text-red-500 uppercase tracking-wider font-bold flex items-center gap-1"><AlertCircle size={10} /> {formErrors.message}</span>}
+                <label htmlFor="message" className="absolute left-0 -top-0.5 text-xs text-zinc-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-7 peer-focus:-top-0.5 peer-focus:text-xs peer-focus:text-orange-500">Your Message</label>
+                {formErrors.message && <span className="absolute -bottom-6 left-0 text-xs text-red-500 font-medium flex items-center gap-1"><AlertCircle size={10} /> {formErrors.message}</span>}
               </div>
 
               <div className="pt-6">
-                <button type="submit" disabled={submitStatus === "sending"} className="w-full md:w-auto px-10 py-4 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-orange-600 transition-all duration-300 disabled:opacity-50 flex items-center justify-center gap-2">
+                <button type="submit" disabled={submitStatus === "sending"} className="w-full md:w-auto px-10 py-4 bg-orange-500 text-white font-semibold text-sm hover:bg-white hover:text-orange-600 transition-all duration-300 disabled:opacity-50 flex items-center justify-center gap-2">
                   {submitStatus === "sending" ? "Sending..." : "Send Message"} <ExternalLink size={14} className={submitStatus === "sending" ? "animate-spin" : ""} />
                 </button>
               </div>
 
               {submitStatus === "success" && (
-                <div className="p-4 bg-green-500/10 border border-green-500/50 text-green-400 rounded-md flex items-center gap-2 text-xs uppercase tracking-widest font-bold mt-4">
+                <div className="p-4 bg-green-500/10 border border-green-500/50 text-green-400 rounded-md flex items-center gap-2 text-xs font-semibold mt-4">
                   <CheckCircle2 size={16} />
                   Message sent successfully. I will get back to you soon.
                 </div>
               )}
 
               {submitStatus === "error" && (
-                <div className="p-4 bg-red-500/10 border border-red-500/50 text-red-400 rounded-md flex items-center gap-2 text-xs uppercase tracking-widest font-bold mt-4">
+                <div className="p-4 bg-red-500/10 border border-red-500/50 text-red-400 rounded-md flex items-center gap-2 text-xs font-semibold mt-4">
                   <AlertCircle size={16} />
                   Failed to send message. Please try again.
                 </div>

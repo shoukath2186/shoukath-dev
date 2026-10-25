@@ -12,10 +12,10 @@ export default function ServicesSection() {
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <div className="inline-flex items-center gap-4">
             <div className="w-8 h-[2px] bg-orange-500" />
-            <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">What I Do</span>
+            <span className="text-xs font-bold text-orange-500">What I Do</span>
             <div className="w-8 h-[2px] bg-orange-500" />
           </div>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
             Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">Expertise</span>
           </h2>
         </div>
@@ -39,7 +39,7 @@ export default function ServicesSection() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wider mb-4">Frontend<br/>Development</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Frontend<br/>Development</h3>
                 <p className="text-zinc-400 leading-relaxed mb-6">
                   Building responsive, accessible, and high-performance user interfaces using modern React ecosystems.
                 </p>
@@ -67,7 +67,7 @@ export default function ServicesSection() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wider mb-4">Backend<br/>Architecture</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Backend<br/>Architecture</h3>
                 <p className="text-zinc-400 leading-relaxed mb-6">
                   Designing scalable REST APIs, secure authentication flows, and efficient database schemas.
                 </p>
@@ -95,7 +95,7 @@ export default function ServicesSection() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wider mb-4">Full Stack<br/>Solutions</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Full Stack<br/>Solutions</h3>
                 <p className="text-zinc-400 leading-relaxed mb-6">
                   Delivering end-to-end applications from conceptualization to deployment and maintenance.
                 </p>

@@ -23,32 +23,43 @@ export default function HeroBanner() {
           initial="hidden"
           animate="show"
         >
-          <motion.div variants={fadeUpVariant} className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 backdrop-blur-md rounded-full text-[10px] font-bold uppercase tracking-widest text-orange-400">
+          <motion.div variants={fadeUpVariant} className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 backdrop-blur-md rounded-full text-xs font-medium text-orange-400">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
             </span>
-            AVAILABLE FOR NEW OPPORTUNITIES
+            Available for new opportunities
           </motion.div>
 
-          <motion.h1 variants={fadeUpVariant} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-white">
-            DESIGN. <br />
-            BUILD. <br />
+
+          <motion.h1
+            variants={fadeUpVariant}
+            className="text-4xl sm:text-5xl md:text-7xl  font-black leading-[1.1] tracking-tight text-white"
+          >
+            Build.{" "}
+            Innovate. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">
-              SCALE.
+              Deliver.
             </span>
           </motion.h1>
 
-          <motion.p variants={fadeUpVariant} className="text-zinc-400 text-lg md:text-xl font-medium max-w-xl border-l-2 border-orange-500 pl-4 mx-auto md:mx-0">
-            Hi, I'm <strong className="text-white">Shoukath O T</strong>. A Full Stack Developer specializing in Next.js, building scalable interfaces and powerful backends.
+          <motion.p
+            variants={fadeUpVariant}
+            className="text-zinc-400 text-lg md:text-xl font-medium max-w-xl border-l-2 border-orange-500 pl-4 mx-auto md:mx-0"
+          >
+            Hi, I'm <strong className="text-white">Shoukath O T</strong>, a Full Stack
+            Developer specializing in React, Next.js, and Node.js. I build modern,
+            responsive web applications with a focus on clean code, seamless user
+            experiences, and reliable backend solutions.
           </motion.p>
 
+
           <motion.div variants={fadeUpVariant} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-            <a href="#projects" className="group px-8 py-4 border border-orange-500 text-xs font-bold uppercase tracking-widest bg-orange-500 text-white hover:bg-transparent hover:text-white transition-all flex items-center justify-center gap-2">
-              VIEW MY WORK <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            <a href="#projects" className="group px-8 py-4 border border-orange-500 text-sm font-semibold bg-orange-500 text-white hover:bg-transparent hover:text-white transition-all flex items-center justify-center gap-2">
+              View My Work <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="/resuem/Shoukath_OTM_Resume.pdf" download="Shoukath_OTM_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-zinc-800 hover:border-orange-500 text-xs font-bold uppercase tracking-widest text-white bg-white/5 backdrop-blur-sm transition-all flex items-center justify-center gap-2">
-              DOWNLOAD CV <Download size={14} />
+            <a href="/resuem/Shoukath_OTM_Resume.pdf" download="Shoukath_OTM_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-zinc-800 hover:border-orange-500 text-sm font-semibold text-white bg-white/5 backdrop-blur-sm transition-all flex items-center justify-center gap-2">
+              Download CV <Download size={14} />
             </a>
           </motion.div>
         </motion.div>
@@ -70,7 +81,7 @@ export default function HeroBanner() {
             <div className="absolute -bottom-6 -left-6 md:-left-12 bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-xl shadow-2xl animate-float-slow z-20">
               <div className="flex items-center gap-4">
                 <div className="text-orange-500 font-black text-3xl">2+</div>
-                <div className="text-xs text-white font-semibold uppercase tracking-wider leading-tight">
+                <div className="text-xs text-white font-semibold leading-tight">
                   Years of<br />Experience
                 </div>
               </div>
@@ -89,7 +100,7 @@ export default function HeroBanner() {
         animate={{ opacity: 0.5 }}
         transition={{ delay: 1.5, duration: 1 }}
       >
-        <span className="text-[9px] tracking-widest uppercase text-zinc-400 font-semibold">Explore</span>
+        <span className="text-xs text-zinc-400 font-medium">Explore</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-orange-500 to-transparent" />
       </motion.div>
     </section>

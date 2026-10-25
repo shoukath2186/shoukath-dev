@@ -9,8 +9,8 @@ const experiences = [
     role: "Software Developer",
     company: "Progbiz Private Limited",
     location: "Kannur, Kerala (On-site)",
-    date: "SEP 2025 - PRESENT",
-    badges: ["🏆 BEST PERFORMER"],
+    date: "Sep 2025 - Present",
+    badges: ["🏆 Best Performer"],
     description: "Developing and maintaining Next.js / Strapi CMS websites and MERN applications. Optimizing visual appearance, Core Web Vitals, and lead generation capabilities across multiple client sites.",
     tags: ["Next.js", "Strapi", "TypeScript", "React", "Node.js", "Tailwind"],
     isActive: true,
@@ -19,7 +19,7 @@ const experiences = [
     role: "Full Stack Developer",
     company: "Kerala Digital Park LLP",
     location: "Remote",
-    date: "JUL 2025 - SEP 2025",
+    date: "Jul 2025 - Sep 2025",
     description: "Developed full-stack web applications using the MERN Stack. Designed and built backend APIs, managed MongoDB database structures, and implemented clean code patterns under agile workflows.",
     tags: ["MERN Stack", "Express.js", "MongoDB", "REST APIs", "Agile"],
   },
@@ -56,9 +56,9 @@ export default function ExperienceSection() {
           <motion.div variants={slideInLeftVariant} className="space-y-2 max-w-2xl">
             <div className="flex items-center gap-4">
               <div className="w-12 h-[2px] bg-orange-500" />
-              <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">My Path</span>
+              <span className="text-xs font-bold text-orange-500">My Path</span>
             </div>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase leading-[1.1]">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black tracking-tight leading-[1.1]">
               Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Journey</span>
             </h2>
           </motion.div>
@@ -93,8 +93,8 @@ export default function ExperienceSection() {
                 >
                   {/* Title Area */}
                   <div className={`md:w-[45%] pl-16 ${isEven ? 'md:pl-0 md:text-right md:pr-12' : 'md:pl-12'} space-y-2 pb-4 md:pb-0`}>
-                    <h3 className="text-2xl font-bold text-black uppercase tracking-wider group-hover:text-orange-500 transition-colors">{exp.role}</h3>
-                    <p className="text-orange-500 font-bold uppercase tracking-widest text-xs">{exp.company}</p>
+                    <h3 className="text-2xl font-bold text-black group-hover:text-orange-500 transition-colors">{exp.role}</h3>
+                    <p className="text-orange-500 font-semibold text-sm">{exp.company}</p>
                     {exp.location && <p className="text-zinc-500 text-sm font-semibold">{exp.location}</p>}
                   </div>
 

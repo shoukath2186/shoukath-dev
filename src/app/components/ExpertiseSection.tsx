@@ -25,9 +25,9 @@ export default function ExpertiseSection() {
           <motion.div variants={slideInLeftVariant} className="lg:w-1/3 space-y-6 lg:sticky lg:top-32">
             <div className="flex items-center gap-4">
               <div className="w-12 h-[2px] bg-orange-500" />
-              <span className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500">Expertise</span>
+              <span className="text-xs font-bold text-orange-500">Expertise</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase leading-[1.1]">
+            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-[1.1]">
               Modern <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">Technology</span>
               <br />Expertise
             </h2>
